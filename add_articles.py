@@ -4,11 +4,11 @@ from faker import Faker
 
 
 def main():
-    # author = session.query(Author).get(1)
+    author = session.query(Author).get(10)
 
-    # na gorze wyciagamy po id, na dole po username lub:
+    # na gorze wyciagamy po id, na dole po username:
 
-    author = session.query(Author).filter_by(user_name="sammy").one()
+    # author = session.query(Author).filter_by(user_name="davidt").one()
 
     fake = Faker()
     article = Article(
